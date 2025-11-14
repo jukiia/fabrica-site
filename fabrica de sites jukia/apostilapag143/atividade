@@ -1,0 +1,54 @@
+ atividade julia carvalho sampaio 1B
+
+1. Explique o que são manipuladores de eventos em JavaScript e qual é o propósito
+principal de sua utilização em páginas web.
+
+R= Os manipuladores de eventos em JavaScript são métodos de código que ocorrem em uma pagina web
+
+2. Descreva o processo de adição de um manipulador de eventos a um elemento HTML
+usando atributos HTML. Quais são as limitações dessa abordagem?
+
+R= Uma adição de um HTML e um manipulador de eventos e usando atributos como o "on"
+
+
+3. Como você adicionaria dinamicamente um manipulador de eventos a um botão usando
+JavaScript, preferencialmente sem misturar o código HTML e o JavaScript? explique em forma de texto pra eu colocar na prova faz resumido
+
+R= usamos o método addEventListener() no script. Primeiro selecionamos o botão
+  pelo seu id  e depois associamos a ele a função que deve ser executada quando o evento acontecer.
+
+
+4. Discuta a diferença entre a fase de captura e a fase de bolha na propagação de eventos
+no DOM. Por que isso é importante ao lidar com manipuladores de eventos?  
+
+R= Na propagação de eventos no DOM, existem duas fases captura e bolha, Na fase de captura, o evento é detectado desde o elemento mais externo do DOM (como o document)
+ Já na fase de bolha o processo ocorre ao contrário. 
+
+
+5. Explique o conceito de delegação de eventos e forneça um exemplo prático de sua
+aplicação. Quais são as vantagens dessa abordagem? 
+
+R= Os eventos é uma técnica em que o manipulador de eventos é adicionado a um elemento pai, em vez de a cada elemento filho individualmente.
+ O evento aproveita a fase de bolha para ser detectado quando “sobe” até o pai, que identifica qual filho o acionou.
+
+
+6. Qual é a importância da função event.preventDefault() em manipuladores de eventos?
+Forneça um exemplo de situação em que essa função seria necessária.
+
+R=A função event.preventDefault() é usada para impedir o comportamento padrão que um evento executaria no navegador.
+ 
+Exemplo: em um formulário, ao clicar em um botão de envio, o comportamento padrão é recarregar a página. Usando event.preventDefault(),
+ é possível evitar isso para validar os dados com JavaScript antes de realmente enviar o formulário.
+
+
+7. Por que a utilização de protótipos é valiosa ao criar objetos em JavaScript? Explique
+como isso contribui para a eficiência do código.
+
+
+R= para remover um manipulador de eventos especificos, use o metodo removeEventListener(),passando o tipo de evento e a mesma função que foi usada para adicionaria.
+
+
+
+
+
+
